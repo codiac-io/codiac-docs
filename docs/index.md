@@ -1,3 +1,4 @@
 # Codiac Documentation
 
-* [API Platform](./api-base/README)
+* [API Platform](./api-base)
+* [Codiac CLI](./cli)
