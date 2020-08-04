@@ -1,23 +1,6 @@
+# Codiac Api Platform
 
-# NodeJS Api Framework
-
-## Table of Contents
-
-### Quickstart Guides
-
-1. [Quickest Quickstart Tutorial](quickstart-1.md) (Build a custom processing endpoint in < 10 minutes)
-
-1. [Second Quickest Quickstart Tutorial](quickstart-2.md) (Database cruds in < 30 minutes>)
-
-1. [Third-Most-Quickest Quickstart Tutorial](quickstart-3.md), (Extending Crud operations and custom data design in < 45 minutes)
-    1. A more real-world domain model
-    1. Embedding in Mongo collections
-    1. Adding Validation
-    1. Adding a Domain layer and an Api-Domain mapper
-    1. Adding a custom data model and a Data-Domain mapper
-    1. Adding an event listener
-    1. Adding a request pipeline plugin
-    1. Adding telemetry
+[Getting Started](./getting-started)
 
 ### Keyboard-less Introduction
 
@@ -58,4 +41,5 @@
     1. Roll Your own endpoint set
     1. Roll Your Own Plugin
     1. Roll Your Own Swagger UI
+
 
