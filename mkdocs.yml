@@ -2,7 +2,7 @@ site_name: 'Codiac'
 theme:
   name: 'readthedocs'
 nav:
-  - Home: index.md
+  - Home: 'index.md'
   - 'Api Platform': './api-base/index.md'
     - 'Getting Started': './api-base/getting-started/README.md'
   - 'CLI Documentation': './cli/index.md'
