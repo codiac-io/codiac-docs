@@ -4,9 +4,10 @@ theme:
 nav:
   - Home: 'index.md'
   - 'CLI Documentation':
-    - Intro: './cli/index.md'
+    - Overview: './cli/index.md'
     - './cli/command-reference.md'
-  - 'Api Platform': './api-base/index.md'
+  - 'Api Platform': 
+    - Overview: './api-base/index.md'
     - 'Getting Started': './api-base/getting-started'
     - Plugins: 
       - './api-base/mongodb-repo-plugin.md'
