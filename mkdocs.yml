@@ -4,6 +4,6 @@ theme:
 nav:
   - Home: 'index.md'
   - 'CLI Documentation'
-    - './cli'
+    - Intro: './cli/index.md'
     - 'command-reference.md'
   - 'Api Platform'
