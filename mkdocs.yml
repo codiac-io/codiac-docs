@@ -3,7 +3,7 @@ theme:
   name: 'readthedocs'
 nav:
   - Home: 'index.md'
-  - 'CLI Documentation'
+  - 'CLI Documentation':
     - Intro: './cli/index.md'
     - 'command-reference.md'
   - 'Api Platform'
