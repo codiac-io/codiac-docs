@@ -1,84 +1,3 @@
-# Codiac API Base
-
-A typescript Api framework for the NodeJs platform. 
-
-[Get started!](#gettingStarted)
-
-- **Extensible**: Injectable and configurable, with multiple layers at which to modify behaviors, from tweak a config setting, to overriding existing behaviors, to injecting a custom library, to wholesale custom coding an entire endpoint.
-- **Intuitive**: BDFD, fluent, extensible, common practices
-- **Lazy**: (aka: efficient, productive) Smart defaults allow COTN (Code Only The Nuance) development.
-- **Testable**: Full decoupling and extensibility.  Endpoint definitions are not dependent on the platform and can therefore be instantiated, mocked, and executed without an http request.  Validation constraints, repos, loggers, and class mappers can be run out of the context of an endpoint, all with mocked dependencies.
-
-## Features
-
-### IOC
-* *What are we going to use for this?*
-* Typescript-ioc https://www.npmjs.com/package/typescript-ioc
-* InversifyJS http://inversify.io/
-
-### Security 
-* JWT authentication
-* Role-based authorization
-### Class Mapping (via Automapper-ts)
-### Validation framework
-### Projections
-* Supported at serialization, class mapping, and persistence layers.
-### HATEOAS support
-* Conventional default projection by composition
-* HAL protocol for references on properties by aggregation 
-### Persistence 
-* Built in generic repo pattern with registry by entity type
-* MongoDb repo
-* Sql NHibernate repo
-* Sql Dapper Orm repo
-* EF repo?
-### Search Support
-1. EntityCriteria objects
-1. PropertyCriteria objects
-### Logging support
-
-
-### Extensible Pipeline Pattern 
-
-Bootstrap in your own custom request handling plugins
-
-
-### Conventional CRUD Endpoints
-
-*This is essentially a plugin*
-
-*Include Route convention, response codes, request contract, response envelope.*
-
-1. Create
-    * Create Single
-    * Create Many
-1. Read
-    * Read one by Id (ie: spec for one)
-    * Read by Criteria  (provide optimized "count", aka: include ability to specify meta only - no output)
-    * Exists by Id (ie: spec for one)
-    * Exists by Criteria
-1. Update
-    * Update Single
-    * Update Many
-1. Patch
-    * Patch Single
-    * Patch Where
-1. Delete
-    * Delete Single
-    * Delete Where
-
-
-
-### Coming soon...
-#### Telemetry support
-#### Event-driven integration model
-* Extensible bus client
-* Enterprise Event model
-
-#### Default api contracts 
-(dynamic, matching endpoint's domain entity if not explicitly declared)
-
-
 # <a name="gettingStarted"></a> Getting Started
 
 1. **Set up a new Typescript project**
@@ -235,4 +154,8 @@ Bootstrap in your own custom request handling plugins
 Hopefully your brain fired off a couple [Dopamine hits](https://www.amazon.com/dp/1591848016/ref=cm_sw_em_r_mt_dp_U_PRhVCb40VY80N) as you worked thru that quick implementation and watched it snap together.  And look at that, you have a fully functional, RESTful, standards-compliant API! 
 
 Now that you've enjoyed your little moment of self-actualization, it's time to propel yourself even further:
-**Check out some more info and examples in the [Documentation](docs/toc.md)...**
+**Check out some more info and examples:
+
+* [Quickstart #1: (Quickest) Build a Custom Endpoint in < 10 mins](quickstart-1.md)
+* [Quickstart #2: Database cruds in < 30 minutes](quickstart-2.md)
+* [Quickstart #3: Extending Crud operations and custom data design in < 45 minutes](quickstart-3.md)

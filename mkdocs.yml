@@ -3,4 +3,12 @@ theme:
   name: 'readthedocs'
 nav:
   - Home: 'index.md'
-  - 'Api Platform': './api-base/index.md'
+  - CLI Documentation
+    - './cli'
+    - 'command0-reference.md'
+  - 'Api Platform'
+    - Intro: './api-base/index.md'
+    - 'Getting Started': 'getting-started'
+    - Concepts: 
+    - Plugins: 
+      - './mongodb-repo-plugin.md'
