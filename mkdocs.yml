@@ -6,4 +6,8 @@ nav:
   - 'CLI Documentation':
     - Intro: './cli/index.md'
     - './cli/command-reference.md'
-  - 'Api Platform'
+  - 'Api Platform':
+    - Intro: './api-base/index.md'
+    - 'Getting Started': 'getting-started'
+    - Plugins: 
+      - './mongodb-repo-plugin.md'
