@@ -5,5 +5,5 @@ nav:
   - Home: 'index.md'
   - 'CLI Documentation':
     - Intro: './cli/index.md'
-    - 'command-reference.md'
+    - './cli/command-reference.md'
   - 'Api Platform'
