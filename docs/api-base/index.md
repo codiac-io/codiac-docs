@@ -107,35 +107,56 @@ Bootstrap in your own custom request handling plugins
 
 ### Documentation
 
-1. Tutorials:
-    1. Getting Started
-    1. Tut 1 
-    1. Tut 2 
-    1. Tut 3 
-1. Basics: Architecture and Components
-    1. The Host
-    1. The ApiDef
-    1. The EndpointDef
-    1. Request and Response Contexts
-    1. The Router
-    1. Dependency Injection and the IOC Container
-    1. The MongoDb Repo
-    1. The Sql Repo
-    1. The Repo Pattern: Registry, Repo, & RepoFor
-    1. The Criteria object
-    1. Filter Types (StringFilter, DataFilter, NumericFilter, DateRangeFilter)
-    1. Projections
-    1. The Validation Framework (automatics, canned, and custom validations)
-    1. The OpenApi endpoint and its UI counterpart
-1. Advanced: Architecture and Components
-    1. Event Sourcing
-    1. Creating Web Hooks
-    1. Request Pipeline Plugins
-1. Extending The System
-    1. Roll Your Own Repo
-    1. Roll Your Own Validation Framework
-    1. Roll Your own endpoint set
-    1. Roll Your Own Plugin
-    1. Roll Your Own Swagger UI
+* [Tutorials](./getting-started/index.md)
+    * [Getting Started](./getting-started/index.md)
+    * [Quickstart 1](./getting-started/quickstart-1.md)
+    * [Quickstart 2](./getting-started/quickstart-2.md)
+    * [Quickstart 3](./getting-started/quickstart-3.md)
 
+* [Basics: Architecture and Components](./basics/index.md)
+
+  <!-- Here's what we currently have -->
+    * [custom-endpoints](./basics/custom-endpoints.md)
+    * [StringFilter](./basics/StringFilter.md)
+    * [custom-filter-defs](./basics/custom-filter-defs.md)
+    * [repo-registry-pattern](./basics/repo-registry-pattern.md)
+    * [patch-and-update](./basics/patch-and-update.md)
+    * [custom-validation](./basics/custom-validation.md)
+    * [using-ioc](./basics/using-ioc.md)
+    <!-- * [HATEOAS](./HATEOAS.md) -->
+    <!-- * [response-envelopes](./response-envelopes.md) -->
+    <!-- * [searching-and-criteria](./searching-and-criteria.md) -->
+    <!-- * [projections](./projections.md) -->
+
+<!-- Suggested in late 2018 
+    * [The Host]()
+    * [The ApiDef]()
+    * [The EndpointDef]()
+    * [Request and Response Contexts]()
+    * [The Router]()
+    * [Dependency Injection and the IOC Container]()
+    * [The MongoDb Repo]()
+    * [The Sql Repo]()
+    * [The Repo Pattern: Registry, Repo, & RepoFor]()
+    * [The Criteria object]()
+    * [Filter Types (StringFilter, DataFilter, NumericFilter, DateRangeFilter)]()
+    * [Projections](./projections.md)
+    * [The Validation Framework (automatics, canned, and custom validations)]()
+    * [The OpenApi endpoint and its UI counterpart]()
+* [Advanced: Architecture and Components]()
+    * [Event Sourcing]()
+    * [Creating Web Hooks]()
+    * [Request Pipeline Plugins]()
+* [Extending The System]()
+    * [Roll Your Own Repo]()
+    * [Roll Your Own Validation Framework]()
+    * [Roll Your own endpoint set]()
+    * [Roll Your Own Plugin]()
+    * [Roll Your Own Swagger UI]()
+-->
+* [Plugins](./plugins/index.md)
+  * [MongoDB Repo](./plugins/mongodb-repo-plugin.md)
+  * [Sql Repo](./plugins/sql-repo-plugin.md)
+  * [Validation](./plugins/validation-plugin.md)
+  * [Open API](./plugins/open-api-plugin.md)
 
