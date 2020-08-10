@@ -1,14 +1,38 @@
 # Codiac Api Platform
 
-A typescript Api framework for the NodeJs platform. 
+## TL;DR
+
+A framework for building Typescript APIs on the NodeJs platform. 
+
+
+## The Impetus
+
+I need a fast, easy to manage, scalable, extensible, container-ready API platform that isnt going to chew up all my time implementing things that arent unique.  And brought a versatile Object Oriented patterned approach to the Typescript/node stack.
+
+COTN
+
+OpenAPI
+
+Domain Driven Design
+
+
+**Extensible**: Injectable and configurable, with multiple layers at which to modify behaviors, from tweak a config setting, to overriding existing behaviors, to injecting a custom library, to wholesale custom coding an entire endpoint.
+
+
+**Intuitive**: 
+BDFD, fluent, extensible, common practices
+
+**Lazy**: (aka: efficient, productive) Smart defaults allow COTN (Code Only The Nuance) development.
+
+**Testable**: Full decoupling and extensibility.  Endpoint definitions are not dependent on the platform and can therefore be instantiated, mocked, and executed without an http request.  Validation constraints, repos, loggers, and class mappers can be run out of the context of an endpoint, all with mocked dependencies.
+
+
+## Here's How
 
 [Getting Started](./getting-started)
 
 
-- **Extensible**: Injectable and configurable, with multiple layers at which to modify behaviors, from tweak a config setting, to overriding existing behaviors, to injecting a custom library, to wholesale custom coding an entire endpoint.
-- **Intuitive**: BDFD, fluent, extensible, common practices
-- **Lazy**: (aka: efficient, productive) Smart defaults allow COTN (Code Only The Nuance) development.
-- **Testable**: Full decoupling and extensibility.  Endpoint definitions are not dependent on the platform and can therefore be instantiated, mocked, and executed without an http request.  Validation constraints, repos, loggers, and class mappers can be run out of the context of an endpoint, all with mocked dependencies.
+
 
 ## Features
 
@@ -80,20 +104,14 @@ Bootstrap in your own custom request handling plugins
 (dynamic, matching endpoint's domain entity if not explicitly declared)
 
 
-### Keyboard-less Introduction
-
-1. Design Strategies
-    1. Impetus and Goals
-    1. Searching and Projections
-    1. RESTfulness and Beyond (standards implemented, list and batch operations)
-    1. Repo Registry Strategy
-    1. MongoDb Strategy
-    1. Decoupling Strategy
-    1. Event Sourcing Strategy
-    1. HATEOAS Strategy
 
 ### Documentation
 
+1. Tutorials:
+    1. Getting Started
+    1. Tut 1 
+    1. Tut 2 
+    1. Tut 3 
 1. Basics: Architecture and Components
     1. The Host
     1. The ApiDef

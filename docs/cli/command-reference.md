@@ -1,4 +1,4 @@
-toyhauler-cli
+Codiac CLI
 =============
 
 Local interface for registering and maintaining Toyhauler assets and pipelines
