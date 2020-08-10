@@ -24,17 +24,8 @@ The documentation is organized into the following topics:
 * [Build APIs](./api-base/index.md)
 
   * [Getting Started / Tutorials](./api-base/getting-started/index.md)
-  * [Basics: Architecture and Components]()
-  * [Advanced: Architecture and Components]()
-  * [Extending The System]()
+  * [Basics: Architecture and Components](./api-base/basics/index.md)
+  <!-- * [Advanced: Architecture and Components]() -->
+  <!-- * [Concepts](./api-base/concepts/index.md) -->
+  <!-- * [Extending The System]() -->
   * [Plugins](./api-base/plugins/index.md)
-
-* [Concepts]()
-    * [Impetus and Goals]()
-    * [Searching and Projections]()
-    * [RESTfulness and Beyond (standards implemented, list and batch operations)]()
-    * [Repo Registry Strategy]()
-    * [MongoDb Strategy]()
-    * [Decoupling Strategy]()
-    * [Event Sourcing Strategy]()
-    * [HATEOAS Strategy]()
