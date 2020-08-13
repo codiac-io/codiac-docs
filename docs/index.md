@@ -5,7 +5,7 @@ Welcome to top of the official documentation for [Codiac](http://codiac.io), an 
 If you are new to Codiac, take a moment and walk through the [introduction](./about/index.md) to get acquainted with what Codiac does and where it fits in.
 
 ## Table of Contents
-The documentation is organized into the following topics:
+The documentation is organized into the following topics...
 
   * **[About Codiac](./about/index.md)**
     * [Introduction](./about/index.md)
@@ -21,8 +21,9 @@ The documentation is organized into the following topics:
     * [Basics: Architecture and Components](./api-base/basics/index.md)
     * [Plugins](./api-base/plugins/index.md)
 
-    <!-- * [Release Notes](./cli/release-notes.md) -->
 
-    <!-- * [Advanced: Architecture and Components]() -->
-    <!-- * [Concepts](./api-base/concepts/index.md) -->
-    <!-- * [Extending The System]() -->
+<!-- * [Release Notes](./cli/release-notes.md) -->
+
+<!-- * [Advanced: Architecture and Components]() -->
+<!-- * [Concepts](./api-base/concepts/index.md) -->
+<!-- * [Extending The System]() -->
