@@ -17,5 +17,12 @@ nav:
     - Intro: './api-base/index.md'
     - 'Getting Started / Tutorials': './api-base/getting-started/index.md'
     - 'Basics: Architecture and Components': './api-base/basics/index.md'
+      - 'custom-endpoints': './custom-endpoints.md'
+      - 'StringFilter': './StringFilter.md'
+      - 'custom-filter-defs': './custom-filter-defs.md'
+      - 'repo-registry-pattern': './repo-registry-pattern.md'
+      - 'patch-and-update': './patch-and-update.md'
+      - 'custom-validation': './custom-validation.md'
+      - 'using-ioc': './using-ioc.md'
     - 'Plugins': './api-base/plugins/index.md'
     
