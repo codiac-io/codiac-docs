@@ -1,6 +1,7 @@
 # Basics:  Architecture and Components
 
   <!-- Here's what we currently have -->
+
   * [custom-endpoints](./custom-endpoints.md)
   * [StringFilter](./StringFilter.md)
   * [custom-filter-defs](./custom-filter-defs.md)
@@ -8,6 +9,8 @@
   * [patch-and-update](./patch-and-update.md)
   * [custom-validation](./custom-validation.md)
   * [using-ioc](./using-ioc.md)
+
+  
   <!-- * [HATEOAS](./HATEOAS.md) -->
   <!-- * [response-envelopes](./response-envelopes.md) -->
   <!-- * [searching-and-criteria](./searching-and-criteria.md) -->

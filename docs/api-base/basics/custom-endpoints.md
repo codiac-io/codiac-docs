@@ -2,21 +2,21 @@
 
 ## Define your contracts
 
-  First, you'll need to define what the request and response objects for this endpoint will look like:
+First, you'll need to define what the request and response objects for this endpoint will look like:
 
-  ```Typescript
-  class myRequest {
-      constructor(public partA: number, public partB: number)
-      { }
-  }
-  ```
+```Typescript
+class myRequest {
+    constructor(public partA: number, public partB: number)
+    { }
+}
+```
 
-  ```Typescript
-  class myResponse {
-      constructor(public sum: number)
-      { }
-  }
-  ```
+```Typescript
+class myResponse {
+    constructor(public sum: number)
+    { }
+}
+```
 
 ## Define your endpoint
   ***Inside the constructor of your api definition***, declare an endpoint definition and add it to the api:

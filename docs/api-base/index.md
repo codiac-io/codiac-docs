@@ -108,6 +108,7 @@ Bootstrap in your own custom request handling plugins
 ### Documentation
 
 * [Tutorials](./getting-started/index.md)
+
     * [Getting Started](./getting-started/index.md)
     * [Quickstart 1](./getting-started/quickstart-1.md)
     * [Quickstart 2](./getting-started/quickstart-2.md)
@@ -116,6 +117,7 @@ Bootstrap in your own custom request handling plugins
 * [Basics: Architecture and Components](./basics/index.md)
 
   <!-- Here's what we currently have -->
+
     * [custom-endpoints](./basics/custom-endpoints.md)
     * [StringFilter](./basics/StringFilter.md)
     * [custom-filter-defs](./basics/custom-filter-defs.md)
@@ -123,6 +125,7 @@ Bootstrap in your own custom request handling plugins
     * [patch-and-update](./basics/patch-and-update.md)
     * [custom-validation](./basics/custom-validation.md)
     * [using-ioc](./basics/using-ioc.md)
+  
     <!-- * [HATEOAS](./HATEOAS.md) -->
     <!-- * [response-envelopes](./response-envelopes.md) -->
     <!-- * [searching-and-criteria](./searching-and-criteria.md) -->
@@ -163,7 +166,9 @@ Bootstrap in your own custom request handling plugins
     * [Roll Your Own Plugin]()
     * [Roll Your Own Swagger UI]()
 -->
+
 * [Plugins](./plugins/index.md)
+
   * [MongoDB Repo](./plugins/mongodb-repo-plugin.md)
   * [Sql Repo](./plugins/sql-repo-plugin.md)
   * [Validation](./plugins/validation-plugin.md)
