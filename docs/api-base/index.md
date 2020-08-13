@@ -109,29 +109,36 @@ Bootstrap in your own custom request handling plugins
 
 * [Tutorials](./getting-started/index.md)
 
-    * [Getting Started](./getting-started/index.md)
-    * [Quickstart 1](./getting-started/quickstart-1.md)
-    * [Quickstart 2](./getting-started/quickstart-2.md)
-    * [Quickstart 3](./getting-started/quickstart-3.md)
+  * [Getting Started](./getting-started/index.md)
+  * [Quickstart 1](./getting-started/quickstart-1.md)
+  * [Quickstart 2](./getting-started/quickstart-2.md)
+  * [Quickstart 3](./getting-started/quickstart-3.md)
 
 * [Basics: Architecture and Components](./basics/index.md)
 
-  <!-- Here's what we currently have -->
+  * [custom-endpoints](./basics/custom-endpoints.md)
+  * [StringFilter](./basics/StringFilter.md)
+  * [custom-filter-defs](./basics/custom-filter-defs.md)
+  * [repo-registry-pattern](./basics/repo-registry-pattern.md)
+  * [patch-and-update](./basics/patch-and-update.md)
+  * [custom-validation](./basics/custom-validation.md)
+  * [using-ioc](./basics/using-ioc.md)
 
-    * [custom-endpoints](./basics/custom-endpoints.md)
-    * [StringFilter](./basics/StringFilter.md)
-    * [custom-filter-defs](./basics/custom-filter-defs.md)
-    * [repo-registry-pattern](./basics/repo-registry-pattern.md)
-    * [patch-and-update](./basics/patch-and-update.md)
-    * [custom-validation](./basics/custom-validation.md)
-    * [using-ioc](./basics/using-ioc.md)
-  
-    <!-- * [HATEOAS](./HATEOAS.md) -->
-    <!-- * [response-envelopes](./response-envelopes.md) -->
-    <!-- * [searching-and-criteria](./searching-and-criteria.md) -->
-    <!-- * [projections](./projections.md) -->
+* [Plugins](./plugins/index.md)
 
-<!-- Suggested in late 2018 
+  * [MongoDB Repo](./plugins/mongodb-repo-plugin.md)
+  * [Sql Repo](./plugins/sql-repo-plugin.md)
+  * [Validation](./plugins/validation-plugin.md)
+  * [Open API](./plugins/open-api-plugin.md)
+
+
+
+  <!-- * [HATEOAS](./HATEOAS.md) -->
+  <!-- * [response-envelopes](./response-envelopes.md) -->
+  <!-- * [searching-and-criteria](./searching-and-criteria.md) -->
+  <!-- * [projections](./projections.md) -->
+
+  <!-- Suggested in late 2018 
     * [The Host]()
     * [The ApiDef]()
     * [The EndpointDef]()
@@ -146,6 +153,8 @@ Bootstrap in your own custom request handling plugins
     * [Projections](./projections.md)
     * [The Validation Framework (automatics, canned, and custom validations)]()
     * [The OpenApi endpoint and its UI counterpart]()
+    -->
+<!-- 
 * [Advanced: Architecture and Components]()
     * [Event Sourcing]()
     * [Creating Web Hooks]()
@@ -165,12 +174,4 @@ Bootstrap in your own custom request handling plugins
     * [Roll Your own endpoint set]()
     * [Roll Your Own Plugin]()
     * [Roll Your Own Swagger UI]()
--->
-
-* [Plugins](./plugins/index.md)
-
-  * [MongoDB Repo](./plugins/mongodb-repo-plugin.md)
-  * [Sql Repo](./plugins/sql-repo-plugin.md)
-  * [Validation](./plugins/validation-plugin.md)
-  * [Open API](./plugins/open-api-plugin.md)
-
+  -->
