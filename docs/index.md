@@ -8,21 +8,18 @@ If you are new to Codiac, take a moment and walk through the [introduction](./ab
 The documentation is organized into the following topics:
 
   * **[About Codiac](./about/index.md)**
-
     * [Introduction](./about/index.md)
     * [Asset Development](./about/asset-dev.md)
     * [DevOps Pipelines](./about/devops.md)
     * [Runtime Management / Kubernetes](./about/runtime-mgmt.md)
 
   * **[Codiac CLI](./cli/index.md)**
-    
     * [Installation](./cli/index.md#installation)
     * [Getting Started / Tutorials](./cli/tutorials/index.md)
     * [Command Reference](./cli/command-reference.md)
     <!-- * [Release Notes](./cli/release-notes.md) -->
 
   * **[Build APIs](./api-base/index.md)**
-
     * [Getting Started / Tutorials](./api-base/getting-started/index.md)
     * [Basics: Architecture and Components](./api-base/basics/index.md)
     <!-- * [Advanced: Architecture and Components]() -->
