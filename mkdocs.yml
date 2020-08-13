@@ -17,6 +17,6 @@ nav:
   - 'Build APIs': 
     - Intro: './api-base/index.md'
     - 'Getting Started / Tutorials': './api-base/getting-started/index.md'
-    - 'Basics: Architecture and Components':'./api-base/basics/index.md'
+    - 'Basics: Architecture and Components': './api-base/basics/index.md'
     - 'Plugins': './api-base/plugins/index.md'
     
