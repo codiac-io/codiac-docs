@@ -106,28 +106,27 @@ Bootstrap in your own custom request handling plugins
 
 
 ### Documentation
-* [Tutorials](./getting-started/index.md)
 
-  * [Getting Started](./getting-started/index.md)
-  * [Quickstart 1](./getting-started/quickstart-1.md)
-  * [Quickstart 2](./getting-started/quickstart-2.md)
-  * [Quickstart 3](./getting-started/quickstart-3.md)
+Topics..
 
-* [Basics: Architecture and Components](./basics/index.md)
-
-  * [custom-endpoints](./basics/custom-endpoints.md)
-  * [StringFilter](./basics/StringFilter.md)
-  * [custom-filter-defs](./basics/custom-filter-defs.md)
-  * [repo-registry-pattern](./basics/repo-registry-pattern.md)
-  * [patch-and-update](./basics/patch-and-update.md)
-  * [custom-validation](./basics/custom-validation.md)
-  * [using-ioc](./basics/using-ioc.md)
-  
-* [Plugins](./plugins/index.md)
-  * [MongoDB Repo](./plugins/mongodb-repo-plugin.md)
-  * [Sql Repo](./plugins/sql-repo-plugin.md)
-  * [Validation](./plugins/validation-plugin.md)
-  * [Open API](./plugins/open-api-plugin.md)
+  * [Tutorials](./getting-started/index.md)
+    * [Getting Started](./getting-started/index.md)
+    * [Quickstart 1](./getting-started/quickstart-1.md)
+    * [Quickstart 2](./getting-started/quickstart-2.md)
+    * [Quickstart 3](./getting-started/quickstart-3.md)
+  * [Basics: Architecture and Components](./basics/index.md)
+    * [custom-endpoints](./basics/custom-endpoints.md)
+    * [StringFilter](./basics/StringFilter.md)
+    * [custom-filter-defs](./basics/custom-filter-defs.md)
+    * [repo-registry-pattern](./basics/repo-registry-pattern.md)
+    * [patch-and-update](./basics/patch-and-update.md)
+    * [custom-validation](./basics/custom-validation.md)
+    * [using-ioc](./basics/using-ioc.md)
+  * [Plugins](./plugins/index.md)
+    * [MongoDB Repo](./plugins/mongodb-repo-plugin.md)
+    * [Sql Repo](./plugins/sql-repo-plugin.md)
+    * [Validation](./plugins/validation-plugin.md)
+    * [Open API](./plugins/open-api-plugin.md)
 
 
 
