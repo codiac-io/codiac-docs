@@ -10,10 +10,10 @@
         ```
         npm i -g @codiac.io/codiac-cli
         ``` 
+    1. ### [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+    1. ### [Node.js](https://nodejs.org/en/download/)
 
 1. ## Create a new EMPTY git repo
-
-    Be sure to copy the clone URL because you'll need it in the next step.
 
     Also, you will be adding your own content, so you will not need to create it with a gitignore or a readme file *(though its ok if you do)*.
 
@@ -28,9 +28,17 @@
 
     [Creating a new repo](https://support.atlassian.com/bitbucket-cloud/docs/create-a-git-repository/)
 
+
+    ---
+    Important:
+    ---
+    Be sure to copy the clone URL because you'll need it in the next step.
+    ***
+
+
 1. ## Create your Codiac API project
 
-    1. Open a command line and navigate to the folder you like to use for development projects
+    1. Open a command line and navigate to the ***PARENT*** folder you like to use for development projects
 
         ```
         cd ~/dev
@@ -111,16 +119,21 @@
 
     Open a command line window to the root of your new project folder. 
 
-1. ## Build
 
-    <!-- 
-    NOTE:  If you are going to be accessing private npm packages, 
+1. ## Set your Identity Tokens
+
+    If you are going to be accessing private npm packages, 
     you'll need identity tokens for your package registry(ies) in order to build successfully.  In that case, set your identity tokens before building:
     ```
     cod identity --provider npm --token abc23pdq456e.etcetera.etcetera
     ```
-    -->
+    ---
+    Note:  
+    ---
+    You can always get help on any command by calling it with the `--help` argument, eg:  `cod identity --help`
+    ***
 
+1. ## Build
 
     ```
     cod build
@@ -139,6 +152,8 @@
     *(using Docker desktop)*
     ```
     cod run
+    or
+    cod run --port [1234]
     ```
 
     In both cases logs will write to your output window, and when the api has successfully bootstrapped itself, it will provide you the address at which to access it in the following log message:
@@ -166,13 +181,16 @@
 
     Now that you've created your api, and verified that its a good build and run, it is a good time to put a stake in the ground and commit your code.
 
-    You can do this with git, but codiac also provides you several source code commands to keep things simple.
+    You can do this with git, but the codiac CLI also provides you several source code commands to keep things simple.
 
     The example below uses the `stage` command with the `-c` (aka: `--commit`) argument to perform both the stage and commit in the same step.
 
     ```
     cod stage -A -c "Initial project creation"
     ```
+
+    *See also: `commit`, `pull`, `push`, `branch`, `switch`, `status`, `merge`, `sync`*
+
 
 6. ## Add a set of RESTful CRUD endpoints for an entity
 
@@ -259,6 +277,19 @@
         PATCH http://127.0.0.1:1775/shoes
         ```
     *(ok, so it's not just CRUD, it's CRUD-P....  Yay!)*
+
+
+1. ## Check in your code
+
+    ```
+    cod stage -A -c "Added show cruds"
+    ```
+
+1. ## Publish your image
+
+    ```
+    cod publish
+    ```
 
 
 ## Congratulations!
