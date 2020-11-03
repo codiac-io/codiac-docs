@@ -1,7 +1,55 @@
 # <a name="gettingStarted"></a> Getting Started
 
-1. **Set up a new Typescript project**
 
+1. ## Install the Prerequisites
+
+    1. ### [Docker Desktop](https://www.docker.com/products/docker-desktop)
+
+    1. ### [Codiac](http://codiac.io)
+
+        ```
+        npm i -g @codiac.io/codiac-cli
+        ``` 
+
+1. ## Create a new EMPTY git repo
+
+    Be sure to copy the clone URL because you'll need it in the next step.
+
+    Also, you will be adding your own content, so you will not need to create it with a gitignore or a readme file *(though its ok if you do)*.
+
+    ### GitHub:  
+    [Creating a new repo](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/create-a-repo)
+
+    ### Azure DevOps:  
+
+    Either [with a new project](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops)  or [from an existing project](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-new-repo?view=azure-devops)
+
+    ### Bitbucket
+
+    [Creating a new repo](https://support.atlassian.com/bitbucket-cloud/docs/create-a-git-repository/)
+
+1. ## Create your Codiac API project
+
+    1. Open a command line and navigate to the folder you like to use for development projects
+
+        ```
+        cd ~/dev
+        ```
+
+    1. Initialize a new project into that folder using your clone url
+
+        We are going to use the optional `-t` parameter (aka: `--projectType`) to specify that we want to initialize as an `api` project type: 
+
+        ```
+        cod init -t api -c [your-clone-url] ./[target-folder]
+        ```
+        *Note: replace "`[your-clone-url]`" and "`[target-folder]`" in that example with the clone url for the new repo you just created and the folder into which you want to clone it.*
+
+        This command will open your project into a new VSCode instance.  Give it a minute while installs all the npm packages for the api project type. 
+
+
+
+<!-- 
     A few typical gotchas we'd like to get out of the way.  Run these commands from inside your new project folder:
 
     1. You'll be using node with npm, so install npm and run 
@@ -17,15 +65,19 @@
         "target": "es6",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true
-        ```
+        ``` 
 
 1. **Install the nodejs_api package:**
 
     ```
     npm install @mfreydl/nodejs_api
     ```
+-->
 
-1. **Create an api definition:**
+
+<!-- 1. ## Create an api definition
+
+    in the `src` folder of your project there is an api definition class already created for you. 
 
     ```typescript
     class myApiDef extends apiDef 
@@ -34,9 +86,9 @@
             super();
         }
     }
-    ```
-
-1. **Create and start a host:**
+    ``` -->
+<!-- 
+1. ## Create and start a host
     
     In your node starting point (eg: app.ts), create a new api host.
     To do so, you'll need to choose a local url and port for your api, and then declare them along with a new instance of your freshly minted api definition: 
@@ -51,16 +103,53 @@
 
     ```Typescript
     HOST.Start();
+    ``` -->
+
+1. ## Open the new project in VSCode
+
+    Give it a minute while installs all the npm packages for the api project type.
+
+    Open a command line window to the root of your new project folder. 
+
+1. ## Build
+
+    <!-- 
+    NOTE:  If you are going to be accessing private npm packages, 
+    you'll need identity tokens for your package registry(ies) in order to build successfully.  In that case, set your identity tokens before building:
+    ```
+    cod identity --provider npm --token abc23pdq456e.etcetera.etcetera
+    ```
+    -->
+
+
+    ```
+    cod build
+    ```
+    NOTE: This command creates a new `Dockerfile` in your project root if you do not already have one.  If you want to regenerate your Dockerfile, just delete this file and run build again.
+
+1. ## Run
+
+    ### Bare-metal 
+    *(just the api, without a container)*
+        
+    From the VSCode menus, select `Run > Start Debugging`, 
+    or hit **`F5`**
+    
+    ### Container
+    *(using Docker desktop)*
+    ```
+    cod run
     ```
 
-3. **Build and run**
+    In both cases logs will write to your output window, and when the api has successfully bootstrapped itself, it will provide you the address at which to access it in the following log message:
 
-5. Verify it by **hitting a few of the built-in endpoints** using your favorite api client ([Postman's a good one](https://www.getpostman.com/))
+    `apiHost listening on 0.0.0.0:5775...`
 
-    Api Root:
-    ```
-    GET http://127.0.0.1:1775/
-    ```
+
+
+5. ## Verify the Run
+
+    Verify it by **hitting a few of the built-in endpoints** using your favorite api client ([Postman's a good one](https://www.getpostman.com/))
 
     Version:
     ```
@@ -73,9 +162,21 @@
     ```
 
 
-6. **Add a set of RESTful CRUD endpoints for an entity**
+1. ## Check in your code
 
-    Let's say you have a "shoe" entity in your domain, and you want to enable consumers of your api to create, read, update, and delete it (aka: CRUD).  
+    Now that you've created your api, and verified that its a good build and run, it is a good time to put a stake in the ground and commit your code.
+
+    You can do this with git, but codiac also provides you several source code commands to keep things simple.
+
+    The example below uses the `stage` command with the `-c` (aka: `--commit`) argument to perform both the stage and commit in the same step.
+
+    ```
+    cod stage -A -c "Initial project creation"
+    ```
+
+6. ## Add a set of RESTful CRUD endpoints for an entity
+
+    Let's say you have a "shoe" entity in your business domain, and you want to enable consumers of your api to create, read, update, and delete it (aka: CRUD).  
     
     The ApiDef extensions make easy work of this, and you're going to need to tell them a few things about your shoe entity.
 
@@ -112,7 +213,18 @@
     ```
     As you can see, the ```addCruds``` method also wants you to declare the route *(```/shoes``` in this case)* in addition to the domain entity and its criteria. 
 
-7. **Build and run**
+7. **Build and Run**
+
+    ```
+    cod build
+    ```
+
+    `VSCode > Run > Start Debugging`  or hit **`F5`**
+
+    or 
+    ```
+    cod run
+    ```
 
 
 8. **Now let's take a look at your new endpoints**
